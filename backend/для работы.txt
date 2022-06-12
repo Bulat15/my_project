@@ -1,0 +1,28 @@
+image
+    id
+    url_title
+
+
+autors_boock
+    id
+    id_image
+    price
+    description
+    type_boock
+
+trusted
+    id
+    id_image
+    description
+    company_name
+
+learn
+    id
+    description
+
+article_recources
+    id
+    id_image
+    title
+    description
+    date
