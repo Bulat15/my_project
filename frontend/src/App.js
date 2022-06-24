@@ -1,7 +1,17 @@
-import React from 'react'
+import './App.css';
+import Content from './Components/Content';
+import Nav from './Components/Nav';
+import React, { useEffect } from 'react';
+import { useDispatch } from "react-redux";
+import { getAllAddAutors } from './assynncActions/autors'
 
-export default function App() {
+function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      <Nav />
+      <Content />
+    </div>
+  );
 }
+
+export default App;
