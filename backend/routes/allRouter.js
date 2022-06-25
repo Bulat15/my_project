@@ -1,4 +1,4 @@
-const {Image} = require('../models/models');
+// const {Image,AutorsBoock,Learn,ArticleRecources} = require('../models/models');
 
 const router = new require('express')();
 const {getAllImage} = require('../controllers/ImageControllers');
@@ -13,6 +13,16 @@ router.get('/all-autors', getAllAutorsBoock);
 router.get('/all-learn', getAllLearn);
 router.get('/all-trusted', getAllTrusted);
 
+// const  obj = Image.findOne({ where: {id: 3}});
+// console.log(obj.id);
 
-// Image.create({url_title : '../Media/section_1_image_1.png'});
-module.exports = router
+// Image.findOne({ where: {id: 3}}) ? console.log('true') : console.log('false');
+// if(Image.findOne({ where: {id: 1}}) === ''){
+//     console.log('true');
+// }else{
+//     console.log('false');
+// }
+// console.log(Image.findOne({ where: {id: 1}}))
+
+
+module.exports = router;

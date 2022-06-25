@@ -10,6 +10,7 @@ const Image = sequelize.define('Image', {
 
 const AutorsBoock = sequelize.define('AutorsBoock', {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+    title:  { type: STRING, allowNull: false },
     price: { type: INTEGER, allowNull: false },
     description: { type: STRING, allowNull: false },
     type_boock: { type: STRING, allowNull: false },
@@ -24,6 +25,7 @@ const Trusted = sequelize.define('Trusted', {
 const Learn = sequelize.define('Learn', {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
     description: { type: STRING, allowNull: false },
+    title: { type: STRING, allowNull: false}
 })
 
 const ArticleRecources = sequelize.define('ArticleRecources', {
@@ -40,5 +42,7 @@ AutorsBoock.belongsTo(Image);
 ArticleRecources.belongsTo(Image);
 
 Trusted.belongsTo(Image);
+
+Learn.belongsTo(Image);
 
 module.exports = { Image, AutorsBoock, Trusted, ArticleRecources ,Learn}

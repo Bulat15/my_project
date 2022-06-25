@@ -26,3 +26,35 @@ article_recources
     title
     description
     date
+
+
+Image.create({url_title : '../Media/section_2_image_1.png'});
+
+Image.create({url_title : '../Media/section_2_image_2.png'});
+
+Image.create({url_title : '../Media/section_4_image_1.png'});
+
+Image.create({url_title : '../Media/section_4_image_2.png'});
+
+Image.create({url_title : '../Media/section_4_image_3.png'});
+
+Image.create({url_title : '../Media/section_4_image_4.png'});
+
+Image.create({url_title : '../Media/section_7_image_1.png'});
+
+Image.create({url_title : '../Media/section_7_image_2.png'});
+
+Image.create({url_title : '../Media/section_7_image_3.png'});
+
+
+AutorsBoock.create({type_boock: 'Printed Book',description: 'As the book contains theoretical content as well as solved questions.',price:13.84,title:'Atomic One’s',imageid : 2});
+AutorsBoock.create({type_boock: 'The Dark Light',description: 'As the book contains theoretical content as well as solved questions.',price:86.11,title:'Atomic One’s',imageid : 3});
+
+Learn.create({title: 'Amazen Corp.',description: 'They has been helping readers, music lovers, and videophiles find quality material.',imageid : 3});
+Learn.create({title: 'Megan Books',description: 'We help physical bookstores manage their overstock to the book inventory.',imageid : 4});
+Learn.create({title: 'Megank',description: 'Bookstore serving up the full spectrum of Black literature and wine black books.',imageid : 5});
+Learn.create({title: 'Urban Store',description: 'We also carry the latest records, islovers, and videophiles find quality material.',imageid : 6});
+
+ArticleRecources.create({title: 'Significant reading has more info number',description: 'Override the digital divide with additional clickthroughs from DevOps for real-time schemas.',date: '6.10.2021',imageid : 7});
+ArticleRecources.create({title: 'Many variations of pass majority have suffered',description: 'Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test.',date: '6.10.2021',imageid : 8});
+ArticleRecources.create({title: 'Words which don’t look even slightly believable',description: 'Podcasting operational change management inside of workflows to establish a framework.',date: '6.10.2021',imageid : 9});
