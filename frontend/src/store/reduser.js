@@ -20,7 +20,7 @@ export const reducer = (state = myState, action) => {
     }
 }
 
-export const getAllArticleAction = (articles) => ({ type: GET_ALL_ARTICLE_RECOURCES, payload: articles });
+export const getAllArticleRecourcesActions = (articles) => ({ type: GET_ALL_ARTICLE_RECOURCES, payload: articles });
 export const getAllAutorsActions = (authors) => ({ type: GET_ALL_AUTORS_BOOCK, payload: authors });
 export const getAllLernAction = (learning) => ({ type: GET_ALL_LEARN, payload: learning });
 export const getAllTrustAction = (trusted) => ({ type: GET_ALL_TRUSTED, payload: trusted });
