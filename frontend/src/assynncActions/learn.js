@@ -1,7 +1,7 @@
 import {getAllLearnAction} from "../store/reduser";
 
 
-export const getAllAddAutors = () =>{
+export const getAllLearn = () =>{
     return (dispatch)=> {
          fetch('http://localhost:7000/api/all/learn', {
                 method: 'GET',
