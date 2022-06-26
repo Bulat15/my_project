@@ -1,16 +1,16 @@
-import './App.css';
-import Content from './Components/Content';
-import Nav from './Components/Nav';
-import React, { useEffect } from 'react';
-import { useDispatch } from "react-redux";
-import { getAllAddAutors } from './assynncActions/autors'
+import AuthorsBookContainer from "./components/AuthorsBookContainer";
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './store'
+
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <Content />
-    </div>
+    <Provider store={store}>
+        <section>
+          <AuthorsBookContainer />
+        </section>
+    </Provider>
   );
 }
 

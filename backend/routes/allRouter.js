@@ -7,11 +7,11 @@ const {getAllAutorsBoock} = require('../controllers/AutorsBoockControllers');
 const {getAllLearn} = require('../controllers/LearnControllers');
 const {getAllTrusted} = require('../controllers/TrustedControllers');
 
-router.get('/all-image', getAllImage);
-router.get('/all-article', getAllArticleRecources);
-router.get('/all-autors', getAllAutorsBoock);
-router.get('/all-learn', getAllLearn);
-router.get('/all-trusted', getAllTrusted);
+router.get('/image', getAllImage);
+router.get('/article', getAllArticleRecources);
+router.get('/autors', getAllAutorsBoock);
+router.get('/learn', getAllLearn);
+router.get('/trusted', getAllTrusted);
 
 // const  obj = Image.findOne({ where: {id: 3}});
 // console.log(obj.id);
