@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { store } from './store'
 import ArticleResourseContainer from "./components/ArticleResourseContainer";
 import LernContainer from "./components/LernContainer/LernContainer";
+import TrustedConteiner from "./components/TrusredConteiner";
 
 
 function App() {
@@ -11,6 +12,9 @@ function App() {
     <Provider store={store}>
         <section>
           <AuthorsBookContainer />
+        </section>
+        <section>
+          <TrustedConteiner />
         </section>
         <section>
           <ArticleResourseContainer />

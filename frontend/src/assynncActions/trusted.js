@@ -3,7 +3,7 @@ import {getAllTrustedAction} from "../store/reduser";
 
 export const getAllTrusted = () =>{
     return (dispatch)=> {
-         fetch('http://localhost:7000/api/all/autors', {
+         fetch('http://localhost:7000/api/all/trusted', {
                 method: 'GET',
                 headers: { "Content-Type": "application/json" },
             })

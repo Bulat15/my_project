@@ -23,4 +23,4 @@ export const reducer = (state = myState, action) => {
 export const getAllArticleRecourcesActions = (articles) => ({ type: GET_ALL_ARTICLE_RECOURCES, payload: articles });
 export const getAllAutorsActions = (authors) => ({ type: GET_ALL_AUTORS_BOOCK, payload: authors });
 export const getAllLearnAction = (learning) => ({ type: GET_ALL_LEARN, payload: learning });
-export const getAllTrustAction = (trusted) => ({ type: GET_ALL_TRUSTED, payload: trusted });
+export const getAllTrustedAction = (trusted) => ({ type: GET_ALL_TRUSTED, payload: trusted });
