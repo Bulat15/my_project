@@ -3,11 +3,6 @@ const { DataTypes } = require('sequelize');
 
 const { INTEGER, STRING } = DataTypes;
 
-// const Image = sequelize.define('Image', {
-//     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
-//     url_title: { type: STRING, allowNull: false },
-// })
-
 const AutorsBoock = sequelize.define('AutorsBoock', {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
     title:  { type: STRING, allowNull: false },
@@ -36,15 +31,5 @@ const ArticleRecources = sequelize.define('ArticleRecources', {
     date: { type: STRING, allowNull: false },
     url_title: { type: STRING, allowNull: false },
 })
-
-
-
-// AutorsBoock.belongsTo(Image);
-
-// ArticleRecources.belongsTo(Image);
-
-// Trusted.belongsTo(Image);
-
-// Learn.belongsTo(Image);
 
 module.exports = { AutorsBoock, Trusted, ArticleRecources ,Learn}
