@@ -3,10 +3,10 @@ const { DataTypes } = require('sequelize');
 
 const { INTEGER, STRING } = DataTypes;
 
-const Image = sequelize.define('Image', {
-    id: { type: INTEGER, primaryKey: true, autoIncrement: true },
-    url_title: { type: STRING, allowNull: false },
-})
+// const Image = sequelize.define('Image', {
+//     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+//     url_title: { type: STRING, allowNull: false },
+// })
 
 const AutorsBoock = sequelize.define('AutorsBoock', {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
@@ -14,12 +14,14 @@ const AutorsBoock = sequelize.define('AutorsBoock', {
     price: { type: INTEGER, allowNull: false },
     description: { type: STRING, allowNull: false },
     type_boock: { type: STRING, allowNull: false },
+    url_title: { type: STRING, allowNull: false },
 })
 
 const Trusted = sequelize.define('Trusted', {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
     description: { type: STRING, allowNull: false },
     company_name: { type: STRING, allowNull: false },
+    url_title: { type: STRING, allowNull: false },
 })
 
 const Learn = sequelize.define('Learn', {
@@ -32,16 +34,17 @@ const ArticleRecources = sequelize.define('ArticleRecources', {
     title: { type: STRING, allowNull: false },
     description: { type: STRING, allowNull: false },
     date: { type: STRING, allowNull: false },
+    url_title: { type: STRING, allowNull: false },
 })
 
 
 
-AutorsBoock.belongsTo(Image);
+// AutorsBoock.belongsTo(Image);
 
-ArticleRecources.belongsTo(Image);
+// ArticleRecources.belongsTo(Image);
 
-Trusted.belongsTo(Image);
+// Trusted.belongsTo(Image);
 
 // Learn.belongsTo(Image);
 
-module.exports = { Image, AutorsBoock, Trusted, ArticleRecources ,Learn}
+module.exports = { AutorsBoock, Trusted, ArticleRecources ,Learn}
