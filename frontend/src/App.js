@@ -6,12 +6,14 @@ import ArticleResourseContainer from "./components/ArticleResourseContainer";
 import LernContainer from "./components/LernContainer/LernContainer";
 import TrustedConteiner from "./components/TrusredConteiner";
 import Nav from "./components/Nav";
+import Section_1 from "./components/Section_1";
 
 
 function App() {
   return (
     <Provider store={store}>
       <Nav/>
+      <Section_1/>
         <section>
           <AuthorsBookContainer />
         </section>
