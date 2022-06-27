@@ -1,8 +1,8 @@
 import React from 'react'
 import s from './Button.module.sass'
 
-export default function Button({label, ...props}) {
+export default function Button({children, ...props}) {
   return (
-    <button className={s.button} {...props}>{label}</button>
+    <button className={s.btn} {...props}>{children}</button>
   )
 }
