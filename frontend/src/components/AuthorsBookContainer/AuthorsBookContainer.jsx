@@ -16,8 +16,15 @@ const AuthorsBookContainer = () => {
 	}, []);
 
 	return (
-		<div className={s.inner} >
-			{authors.map(author => <Author key={author.id} {...author} />)}
+		<div>
+			<div className={s.up}>
+				<p className={s.header}>The Author's Book</p>
+				<div className={s.line}></div>
+       		</div>
+
+			<div className={s.main} >
+				{authors.map(author => <Author key={author.id} {...author} />)}
+			</div>
 		</div>
 	);
 }

@@ -7,6 +7,7 @@ import LernContainer from "./components/LernContainer/LernContainer";
 import TrustedConteiner from "./components/TrusredConteiner";
 import Nav from "./components/Nav";
 import Section_1 from "./components/Section_1";
+import Section_3 from "./components/Section_3";
 
 
 function App() {
@@ -14,12 +15,9 @@ function App() {
     <Provider store={store}>
       <Nav/>
       <Section_1/>
-        <section>
-          <AuthorsBookContainer />
-        </section>
-        <section>
-          <TrustedConteiner />
-        </section>
+      <AuthorsBookContainer />
+      <Section_3/>
+      <TrustedConteiner />
         <section>
           <ArticleResourseContainer />
         </section>

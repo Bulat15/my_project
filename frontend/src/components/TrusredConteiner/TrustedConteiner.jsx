@@ -16,8 +16,14 @@ const TrustedConteiner = () => {
 	}, []);
 
 	return (
-		<div className={s.inner} >
+		<div >
+			<div className={s.up}>
+				<p className={s.header}>Trusted By The Best</p>
+				<div className={s.line}></div>
+			</div>
+			<div className={s.main}>
 				{trusted.map(trust => <Trusted key={trust.id} {...trust} />)}
+			</div>
 		</div>
 	);
 }

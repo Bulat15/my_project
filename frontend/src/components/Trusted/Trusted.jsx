@@ -1,12 +1,12 @@
 import React from 'react'
 import s from './Trusted.module.sass'
 
-const Trust = ({ id, description, company_name,	url_title}) => {
+const Trust = ({ id, description, company_name, url_title }) => {
 	return (
-		<div className={s.card}>
-			<p>{description}</p>
-			<p>{company_name}</p>
-			<p>{url_title}</p>
+		<div className={s.container}>
+			<img className={s.img} src={`./media/${url_title}`}></img>
+			<p className={s.title}>{company_name}</p>
+			<p className={s.description}>{description}</p>
 		</div>
 
 	)
