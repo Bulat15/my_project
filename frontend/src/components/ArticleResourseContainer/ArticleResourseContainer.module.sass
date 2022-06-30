@@ -1,13 +1,37 @@
+.container
+    background-color: #F4F8FF
+    
+    .up
+        justify-content: center
+        padding-top: 130px
 
-.inner
-	display: flex
-	align-items: center
-	justify-content: space-around
-	padding: 60px 0
+        .line
+            background-color: #FFCA42
+            height: 3px
+            width: 50px
+            margin: auto
+            margin-top: 23px
 
-@media (max-width: 1280px)
-	.inner
-		flex-wrap: wrap
-		justify-content: center
-		align-items: start
-		grid-row-gap: 30px
+        .header
+            font-family: 'Cardo'
+            font-style: normal
+            font-weight: 400
+            font-size: 42px
+            line-height: 50px
+            text-align: center
+            text-transform: capitalize
+            color: #1B3764
+
+    .main
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 20px
+        padding: 70px
+        padding-bottom: 150px
+
+
+    @media (max-width: 1200px)
+        .main
+            display: flex
+            flex-direction: column
+            align-items: center

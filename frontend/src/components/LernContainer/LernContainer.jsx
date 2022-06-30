@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux'
 import { getAllLearn } from '../../assynncActions/learn'
 import { useDispatch } from 'react-redux'
+import photo from '../../media/section_6_image_1.png'
 
 const LernContainer = () => {
 	const dispatch = useDispatch();
@@ -16,9 +17,26 @@ const LernContainer = () => {
 	}, []);
 
 	return (
-		<div className={s.inner} >
-				{learning.map(lern => <Learn key={lern.id} {...lern} />)}
-		</div>
+		<div>
+        <div className={s.up}>
+            <p className={s.header}>What Will You Learn?</p>
+            <div className={s.line}></div>
+        </div>
+
+        <div className={s.main}>
+            <div className={s.card}>
+              {learning.map(lern => <Learn key={lern.id} {...lern} />)}
+            </div>
+
+            <div className={s.photo}>
+              <div className={s.frame}>
+                <img src={photo}></img>
+              </div>
+            </div>
+
+        </div>
+
+    </div>
 	);
 }
 

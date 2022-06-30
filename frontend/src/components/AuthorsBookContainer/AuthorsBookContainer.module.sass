@@ -1,6 +1,6 @@
 .main
     padding: 80px
-    display: grid
+    display: flex
     grid-gap: 40px
     grid-template-columns: repeat(2, 1fr)
 
@@ -26,3 +26,9 @@
         text-align: center
         text-transform: capitalize
         color: #1B3764
+
+@media (max-width: 1200px)
+	.main
+		flex-wrap: wrap
+		justify-content: center
+		align-items: flex-start

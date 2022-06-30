@@ -16,7 +16,7 @@ const AuthorsBookContainer = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className={s.autors_boock}>
 			<div className={s.up}>
 				<p className={s.header}>The Author's Book</p>
 				<div className={s.line}></div>

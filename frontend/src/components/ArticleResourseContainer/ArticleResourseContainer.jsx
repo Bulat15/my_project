@@ -16,8 +16,15 @@ const ArticleResourseContainer = () => {
 	});
 
 	return (
-		<div className={s.inner} >
-			{article.map(art => <ArticleResourse key={art.id} {...art} />)}
+		<div className={s.container}>
+			<div className={s.up}>
+				<p className={s.header}>Articles & Resources</p>
+				<div className={s.line}></div>
+			</div>
+
+			<div className={s.main} >
+				{article.map(art => <ArticleResourse key={art.id} {...art} />)}
+			</div>
 		</div>
 	);
 }

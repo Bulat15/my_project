@@ -1,12 +1,12 @@
 import React from 'react'
-import s from './Nav.module.sass'
+import s from './Header.module.sass'
 import logotip from '../../media/logo.png'
 import Button from '../UI/Button'
 import facebook from '../../media/facebook.svg'
 import twitter from '../../media/twitter.svg'
 import linkedin from '../../media/in.svg'
 
-export default function Nav() {
+export default function Header() {
     return (
         <nav className={s.main}>
             <div className={s.href}>

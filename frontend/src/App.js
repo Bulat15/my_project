@@ -5,25 +5,25 @@ import { store } from './store'
 import ArticleResourseContainer from "./components/ArticleResourseContainer";
 import LernContainer from "./components/LernContainer/LernContainer";
 import TrustedConteiner from "./components/TrusredConteiner";
-import Nav from "./components/Nav";
+import Header from "./components/Header/Header";
 import Section_1 from "./components/Section_1";
 import Section_3 from "./components/Section_3";
+import Section_5 from "./components/Section_5";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
     <Provider store={store}>
-      <Nav/>
+      <Header/>
       <Section_1/>
       <AuthorsBookContainer />
       <Section_3/>
       <TrustedConteiner />
-        <section>
-          <ArticleResourseContainer />
-        </section>
-        <section>
-          <LernContainer />
-        </section>
+      <Section_5/>
+      <LernContainer />
+      <ArticleResourseContainer />
+      <Footer/>
     </Provider>
   );
 }
